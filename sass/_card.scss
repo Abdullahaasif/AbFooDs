@@ -1,0 +1,56 @@
+.card {
+    height: 130vh;
+    background-color: $background;
+    &__heading {
+        color: #fff;
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
+        text-align: center;
+        font-family: $font-family;
+        padding: 6rem;
+    }
+    &__cards {
+        display: flex;
+        justify-content: space-around;
+
+        &-card-1 {
+            width: 20rem;
+
+            height: 30rem;
+            background-color: $color;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                transform: translateY(-20px);
+                box-shadow: 1px 1px 30px #000;
+            }
+            &-content {
+                &-img {
+                    width: 20rem;
+                    height: 20rem;
+                }
+                &-heading {
+                    font-family: $font-family;
+                    font-size: 2rem;
+                    letter-spacing: 0.2rem;
+                }
+                &-btn {
+                    width: 7rem;
+                    height: 3rem;
+                    border: 0.2rem solid rgb(66, 136, 0);
+                    border-radius: 30px;
+                    background-color: transparent;
+                    margin-top: 2rem;
+                    transition: all 0.2s ease-in-out;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: rgb(66, 136, 0);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

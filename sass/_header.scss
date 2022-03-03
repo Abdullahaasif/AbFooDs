@@ -1,0 +1,33 @@
+.header{
+    position: relative;
+    height: 100vh;
+    background-color:$background;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    text-align: center;
+    
+    &__heading{
+        color: #fff;
+        font-size: 3rem;
+        letter-spacing: .5rem;
+        text-align: center;
+        font-family: $font-family;
+        
+        
+    }
+  
+}
+.change{
+    font-size: 15rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    color: $color;
+    animation: icon .2s;
+}
+@keyframes icon{
+    0%{
+        transform: scale(-1);
+    }
+}

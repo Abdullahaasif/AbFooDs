@@ -1,0 +1,325 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  background-color: #303030;
+  text-align: center;
+}
+
+.header__heading {
+  color: #fff;
+  font-size: 3rem;
+  letter-spacing: .5rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.change {
+  font-size: 15rem;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  color: #FFC72C;
+  -webkit-animation: icon .2s;
+          animation: icon .2s;
+}
+
+@-webkit-keyframes icon {
+  0% {
+    -webkit-transform: scale(-1);
+            transform: scale(-1);
+  }
+}
+
+@keyframes icon {
+  0% {
+    -webkit-transform: scale(-1);
+            transform: scale(-1);
+  }
+}
+
+.footer {
+  background-color: #4e4e4e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__content {
+  margin-left: 3rem;
+  padding: 3rem;
+  border-bottom: 0.2rem solid #303030;
+}
+
+.footer__content--heading {
+  color: #FFC72C;
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.footer__content--para {
+  font-style: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  color: #303030;
+}
+
+.footer__btn {
+  margin-left: 18rem;
+  padding: 3rem;
+}
+
+.footer__btn-label {
+  background-color: #fff;
+  border: none;
+  width: 25rem;
+  padding: .5rem;
+  height: 3rem;
+  position: relative;
+}
+
+.footer__btn--btn {
+  height: 3rem;
+  position: absolute;
+  width: 5rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  margin-left: -5rem;
+  text-align: center;
+  border: none;
+}
+
+.nav {
+  background-color: #1f1f1f;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-icon {
+  color: #a3a3a3;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.nav-icon:hover {
+  color: #fff;
+}
+
+.nav-icon .fas {
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+}
+
+.nav-menu {
+  width: 40px;
+  margin-left: 2rem;
+  border-radius: 3rem 3rem 1rem 1rem;
+  height: 60px;
+  margin-top: 2rem;
+  background-color: #1f1f1f;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-menu::before {
+  content: "";
+  position: absolute;
+  background-color: #1f1f1f;
+  width: 5px;
+  height: 19rem;
+  top: -17.6rem;
+  left: 1.1rem;
+}
+
+.target {
+  -webkit-transform: translateY(-120px);
+          transform: translateY(-120px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.card {
+  height: 130vh;
+  background-color: #303030;
+}
+
+.card__heading {
+  color: #fff;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding: 6rem;
+}
+
+.card__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card__cards-card-1 {
+  width: 20rem;
+  height: 30rem;
+  background-color: #FFC72C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.card__cards-card-1:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-box-shadow: 1px 1px 30px #000;
+          box-shadow: 1px 1px 30px #000;
+}
+
+.card__cards-card-1-content-img {
+  width: 20rem;
+  height: 20rem;
+}
+
+.card__cards-card-1-content-heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.card__cards-card-1-content-btn {
+  width: 7rem;
+  height: 3rem;
+  border: 0.2rem solid #428800;
+  border-radius: 30px;
+  background-color: transparent;
+  margin-top: 2rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.card__cards-card-1-content-btn:hover {
+  background-color: #428800;
+  color: #fff;
+}
+
+.gallery {
+  height: 150vh;
+  background-color: #303030;
+}
+
+.gallery__heading {
+  color: #fff;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding: 6rem;
+}
+
+.gallery__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.gallery__row-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 5rem;
+}
+
+.gallery__imgs {
+  width: 20rem;
+  height: 15rem;
+  position: relative;
+}
+
+.gallery__imgs-img {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  -webkit-box-shadow: 3px 3px #fff;
+          box-shadow: 3px 3px #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.gallery__imgs-img:hover {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-box-shadow: 1px 10px  #012a9c,  4px 4px #ffffff;
+          box-shadow: 1px 10px  #012a9c,  4px 4px #ffffff;
+}
+
+.gallery__imgs-content {
+  position: absolute;
+  color: #fff;
+  margin-left: 2rem;
+  opacity: 0;
+}
+
+.gallery__imgs-content:hover {
+  opacity: 1;
+}
+
+.gallery__imgs-content-heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+.gallery__imgs-content-heading::after {
+  content: "";
+  position: absolute;
+  width: 17rem;
+  height: 2px;
+  background-color: #fff;
+  right: 0.9rem;
+  bottom: 6rem;
+}
+
+.gallery__imgs-content-para {
+  font-family: "Roboto", sans-serif;
+  margin-top: 2rem;
+  width: 70%;
+}
+
+.gallery__imgs-content-para::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 10rem;
+  background-color: #fff;
+  right: 3rem;
+  bottom: -2rem;
+}
+/*# sourceMappingURL=style.css.map */
